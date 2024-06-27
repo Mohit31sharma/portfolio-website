@@ -1,5 +1,10 @@
 * {
     font-family: sans-serif;
+    background-image: url(profile2.jpeg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment:fixed;
+    background-size: cover;
 }
 
 :root {
@@ -13,7 +18,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background-color: var(--background-color);
+
 }
 
 header {
@@ -66,26 +71,6 @@ header nav.active a::before {
 
 header nav a:hover::before {
     width: 50px;
-}
-
-.image-box {
-    width: 560px;
-    height: 560px;
-    position: relative;
-    margin-left: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-box img {
-    border: 5px solid white;
-    border-radius: 50%;
-    box-shadow: 10px 10px 50px white;
-    background-color: var(--aqua-color);
-    width: 400px;
-    height: 400px;
-    position: absolute;
 }
 
 .text-box {
@@ -173,7 +158,7 @@ header::before,
     animation-delay: 1.5s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     header {
         padding: 0 20px;
     }
@@ -213,12 +198,10 @@ header::before,
         margin: 20px 0 0;
     }
     .image-box {
-        width: 90%;
-        margin-left: 0;
+        display: block;
     }
     .image-box img {
-        width: 100%;
-        height: auto;
+        display: flexbox;
     }
     .text-box .icon-box {
         width: 80%;
